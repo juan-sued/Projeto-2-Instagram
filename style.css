@@ -3,19 +3,46 @@ body {
 }
 
 .topo {
-  background-color: green;
-  height: 40px;
+  background-color: white;
+  height: 54px;
   width: 100%;
   position: fixed;
 
   top: 0;
   left: 0;
   display: flex;
+  justify-content: space-around;
+  border-bottom: 1px solid #dbdbdb;
 }
-.limitador895px {
-  width: 895px;
+.Esquerda-topo {
   display: flex;
-  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+}
+.ionicon {
+  height: 17px;
+}
+
+.barrinha-logo-vertical {
+  width: 1px;
+  height: 22px;
+  background-color: #dbdbdb;
+  margin: 0px 10px 0px 17px;
+}
+.direita-topo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.direita-topo .ionicon {
+  margin: 0px 17px 0px 0px;
+}
+
+.limitador940px {
+  width: 940px;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 .top-search {
@@ -23,14 +50,19 @@ body {
   width: 215px;
   border: 1px solid;
   border-radius: 3px;
-  background-color: antiquewhite;
+  background-color: white;
+  font-style: normal #979797;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+.Esquerda-topo img {
+  height: 29px;
+  width: 103px;
+}
 
 .website {
-  background-color: rgb(73, 92, 112);
+  background-color: #fafafa;
   display: flex;
   justify-content: center;
   width: 100%;
@@ -50,6 +82,7 @@ body {
   width: 293px;
   position: fixed;
   right: 207px;
+  top: 54px;
 }
 .posts-stories {
   display: flex;
