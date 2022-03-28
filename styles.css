@@ -124,6 +124,9 @@ main {
   height: 58px;
   border-radius: 100%;
 }
+.stories-perfil :hover {
+  cursor: pointer;
+}
 .stories-perfil {
   width: 66px;
   height: 66px;
@@ -134,7 +137,8 @@ main {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin-bottom: 1px;
+  margin-top: 3px;
+  margin-bottom: 3px;
 }
 
 .stories {
@@ -145,7 +149,7 @@ main {
 }
 
 .nome-stories p {
-  font-weight: 400;
+  font-weight: 300;
   font-size: 12px;
   line-height: 14px;
 }
@@ -175,12 +179,18 @@ main {
   align-items: center;
   margin-left: 17px;
 }
+.dados-perfil :hover {
+  cursor: pointer;
+}
 
 .post-nome-perfil p {
   font-size: 14px;
   font-weight: 500;
   line-height: 16.41px;
   margin-left: 10px;
+}
+.post-nome-perfil :hover {
+  cursor: pointer;
 }
 
 .foto-perfil {
@@ -233,6 +243,7 @@ main {
 
 .foto-perfil-usuario {
   width: 20px;
+  height: 20px;
   border-radius: 50%;
   margin-right: 10px;
 }
@@ -250,6 +261,8 @@ strong {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  position: fixed;
+  left: calc(50% + 184px);
 }
 
 .perfil-usuario {
@@ -257,11 +270,20 @@ strong {
   display: flex;
   align-items: center;
 }
+.perfil-usuario,
+h3,
+.seguir:hover {
+  cursor: pointer;
+}
 
 .sidebar-foto-perfil {
   border-radius: 50%;
   width: 56px;
+  height: 56px;
   margin-right: 17px;
+}
+.sidebar-foto-perfil:hover {
+  cursor: pointer;
 }
 
 h3 {
@@ -328,6 +350,7 @@ h4 {
 .segue-voce {
   font-weight: 400;
   color: #8e8e8e;
+  margin-top: 3px;
 }
 
 .seguir {
