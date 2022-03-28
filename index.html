@@ -1,150 +1,291 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Instagram</title>
-    <link rel="stylesheet" href="style.css" />
-
     <link rel="stylesheet" href="reset.css" />
-
+    <link rel="stylesheet" href="styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100;200;300;400;500;600;700&family=Kumbh+Sans&family=Public+Sans:ital,wght@0,400;0,800;1,300&family=Roboto+Condensed:wght@300&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap"
       rel="stylesheet"
     />
+    <title>Instagram</title>
   </head>
   <body>
-    <!--
-         Início topBar
-        -->
-    <div class="topo">
-      <div class="limitador940px">
-        <!--
-        começo esquerda do topo
-        -->
-        <div class="Esquerda-topo">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="ionicon"
-            viewBox="0 0 512 512"
-          >
-            <title>Logo Instagram</title>
-            <path
-              d="M349.33 69.33a93.62 93.62 0 0193.34 93.34v186.66a93.62 93.62 0 01-93.34 93.34H162.67a93.62 93.62 0 01-93.34-93.34V162.67a93.62 93.62 0 0193.34-93.34h186.66m0-37.33H162.67C90.8 32 32 90.8 32 162.67v186.66C32 421.2 90.8 480 162.67 480h186.66C421.2 480 480 421.2 480 349.33V162.67C480 90.8 421.2 32 349.33 32z"
-            />
-            <path
-              d="M377.33 162.67a28 28 0 1128-28 27.94 27.94 0 01-28 28zM256 181.33A74.67 74.67 0 11181.33 256 74.75 74.75 0 01256 181.33m0-37.33a112 112 0 10112 112 112 112 0 00-112-112z"
-            />
-          </svg>
-          <div class="barrinha-logo-vertical"></div>
-          <img src="img/logo.png" alt="" />
+    <header>
+      <div class="menu-superior">
+        <div class="instagram">
+          <div class="logo-icone">
+            <ion-icon name="logo-instagram"></ion-icon>
+          </div>
+          <div class="borda-top"></div>
+          <div class="logo-cursivo"><img src="img/logo.png" /></div>
         </div>
-        <!--
-          fim esquerda do topo
-          -->
-        <!--
-          começo direita do topo
-          -->
-        <div class="top-search">Pesquisar</div>
-
-        <div class="direita-topo">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="ionicon"
-            viewBox="0 0 512 512"
-          >
-            <title>Paper Plane</title>
-            <path
-              d="M53.12 199.94l400-151.39a8 8 0 0110.33 10.33l-151.39 400a8 8 0 01-15-.34l-67.4-166.09a16 16 0 00-10.11-10.11L53.46 215a8 8 0 01-.34-15.06zM460 52L227 285"
-              fill="none"
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="32"
-            />
-          </svg>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="ionicon"
-            viewBox="0 0 512 512"
-          >
-            <title>Compass</title>
-            <path
-              d="M448 256c0-106-86-192-192-192S64 150 64 256s86 192 192 192 192-86 192-192z"
-              fill="none"
-              stroke="currentColor"
-              stroke-miterlimit="10"
-              stroke-width="32"
-            />
-            <path
-              d="M350.67 150.93l-117.2 46.88a64 64 0 00-35.66 35.66l-46.88 117.2a8 8 0 0010.4 10.4l117.2-46.88a64 64 0 0035.66-35.66l46.88-117.2a8 8 0 00-10.4-10.4zM256 280a24 24 0 1124-24 24 24 0 01-24 24z"
-            />
-          </svg>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="ionicon"
-            viewBox="0 0 512 512"
-          >
-            <title>Heart</title>
-            <path
-              d="M352.92 80C288 80 256 144 256 144s-32-64-96.92-64c-52.76 0-94.54 44.14-95.08 96.81-1.1 109.33 86.73 187.08 183 252.42a16 16 0 0018 0c96.26-65.34 184.09-143.09 183-252.42-.54-52.67-42.32-96.81-95.08-96.81z"
-              fill="none"
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="32"
-            />
-          </svg>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="ionicon"
-            viewBox="0 0 512 512"
-          >
-            <title>Person</title>
-            <path
-              d="M344 144c-3.92 52.87-44 96-88 96s-84.15-43.12-88-96c-4-55 35-96 88-96s92 42 88 96z"
-              fill="none"
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="32"
-            />
-            <path
-              d="M256 304c-87 0-175.3 48-191.64 138.6C62.39 453.52 68.57 464 80 464h352c11.44 0 17.62-10.48 15.65-21.4C431.3 352 343 304 256 304z"
-              fill="none"
-              stroke="currentColor"
-              stroke-miterlimit="10"
-              stroke-width="32"
-            />
-          </svg>
+        <div class="barra-pesquisa"><p>Pesquisar</p></div>
+        <div class="icones-insta">
+          <ion-icon name="paper-plane-outline"></ion-icon>
+          <ion-icon name="compass-outline"></ion-icon>
+          <ion-icon name="heart-outline"></ion-icon>
+          <ion-icon name="person-outline"></ion-icon>
         </div>
-        <!--
-          fim esquerda do topo
-          -->
       </div>
-    </div>
-    <!--
-        Fim topBar
-        -->
+      <div class="menu-superior-mobile">
+        <div class="logo-icone">
+          <ion-icon name="logo-instagram"></ion-icon>
+        </div>
+        <div class="logo-cursivo"><img src="img/logo.png" /></div>
+        <ion-icon name="paper-plane-outline"></ion-icon>
+      </div>
+    </header>
 
-    <div class="website">
+    <main>
       <div class="conteudo">
-        <div class="posts-stories">
-          <div class="stories"></div>
-          <div class="posts">
-            <div class="post"></div>
-            <div class="post"></div>
-            <div class="post"></div>
-            <div class="post"></div>
-            <div class="post"></div>
+        <div class="conteudo-central">
+          <div class="caixa-stories">
+            <ion-icon name="chevron-forward-circle"></ion-icon>
+            <div class="stories">
+              <div class="stories-perfil">
+                <img src="img/gatinho-pokemon.png" />
+              </div>
+              <div class="nome-stories">
+                <p>Batata</p>
+              </div>
+            </div>
+            <div class="stories">
+              <div class="stories-perfil">
+                <img src="img/gatinho-pokemon.png" />
+              </div>
+              <div class="nome-stories">
+                <p>Batata</p>
+              </div>
+            </div>
+            <div class="stories">
+              <div class="stories-perfil">
+                <img src="img/gatinho-pokemon.png" />
+              </div>
+              <div class="nome-stories">
+                <p>batata</p>
+              </div>
+            </div>
+            <div class="stories">
+              <div class="stories-perfil">
+                <img src="img/gatinho-pokemon.png" />
+              </div>
+              <div class="nome-stories">
+                <p>batata</p>
+              </div>
+            </div>
+            <div class="stories">
+              <div class="stories-perfil">
+                <img src="img/gatinho-pokemon.png" />
+              </div>
+              <div class="nome-stories">
+                <p>batata</p>
+              </div>
+            </div>
+            <div class="stories">
+              <div class="stories-perfil">
+                <img src="img/gatinho-pokemon.png" />
+              </div>
+              <div class="nome-stories">
+                <p>batata</p>
+              </div>
+            </div>
+            <div class="stories">
+              <div class="stories-perfil">
+                <img src="img/gatinho-pokemon.png" />
+              </div>
+              <div class="nome-stories">
+                <p>batata</p>
+              </div>
+            </div>
+            <div class="stories">
+              <div class="stories-perfil">
+                <img src="img/gatinho-pokemon.png" />
+              </div>
+              <div class="nome-stories">
+                <p>batata</p>
+              </div>
+            </div>
+            <ion-icon name="chevron-forward-circle"></ion-icon>
+          </div>
+          <div class="coluna-posts">
+            <div class="post">
+              <div class="post-parte-superior">
+                <div class="dados-perfil">
+                  <img class="foto-perfil" src="img/gatinho-pokemon.png" />
+                  <div class="post-nome-perfil"><p>batata</p></div>
+                </div>
+                <div class="icone-opcoes">
+                  <ion-icon name="ellipsis-horizontal"></ion-icon>
+                </div>
+              </div>
+              <img class="foto-principal" src="img/adele-insta.png" />
+              <div class="post-parte-inferior">
+                <div class="icones-post-inferiores">
+                  <div class="icones-esquerda">
+                    <ion-icon name="heart-outline"></ion-icon>
+                    <ion-icon name="chatbubble-outline"></ion-icon>
+                    <ion-icon name="paper-plane-outline"></ion-icon>
+                  </div>
+                  <div class="icones-direita">
+                    <ion-icon name="bookmark-outline"></ion-icon>
+                  </div>
+                </div>
+                <div class="curtidas">
+                  <img class="foto-perfil-usuario" src="img/fini.jpg" />
+                  <div class="informacoes-curtidas">
+                    Curtido por <strong>gabs_tiago</strong> e
+                    <strong>outras 1.011.690 pessoas</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="post">
+              <div class="post-parte-superior">
+                <div class="dados-perfil">
+                  <img class="foto-perfil" src="img/gatinho-pokemon.png" />
+                  <div class="post-nome-perfil"><p>batata</p></div>
+                </div>
+                <div class="icone-opcoes">
+                  <ion-icon name="ellipsis-horizontal"></ion-icon>
+                </div>
+              </div>
+              <img class="foto-principal" src="img/fini.jpg" />
+              <div class="post-parte-inferior">
+                <div class="icones-post-inferiores">
+                  <div class="icones-esquerda">
+                    <ion-icon name="heart-outline"></ion-icon>
+                    <ion-icon name="chatbubble-outline"></ion-icon>
+                    <ion-icon name="paper-plane-outline"></ion-icon>
+                  </div>
+                  <div class="icones-direita">
+                    <ion-icon name="bookmark-outline"></ion-icon>
+                  </div>
+                </div>
+                <div class="curtidas">
+                  <img class="foto-perfil-usuario" src="img/fini.jpg" />
+                  <div class="informacoes-curtidas">
+                    Curtido por <strong>gabs_tiago</strong> e
+                    <strong>outras 1.011.690 pessoas</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="post">
+              <div class="post-parte-superior">
+                <div class="dados-perfil">
+                  <img class="foto-perfil" src="img/gatinho-pokemon.png" />
+                  <div class="post-nome-perfil"><p>batata</p></div>
+                </div>
+                <div class="icone-opcoes">
+                  <ion-icon name="ellipsis-horizontal"></ion-icon>
+                </div>
+              </div>
+              <img class="foto-principal" src="img/adele-insta.png" />
+              <div class="post-parte-inferior">
+                <div class="icones-post-inferiores">
+                  <div class="icones-esquerda">
+                    <ion-icon name="heart-outline"></ion-icon>
+                    <ion-icon name="chatbubble-outline"></ion-icon>
+                    <ion-icon name="paper-plane-outline"></ion-icon>
+                  </div>
+                  <div class="icones-direita">
+                    <ion-icon name="bookmark-outline"></ion-icon>
+                  </div>
+                </div>
+                <div class="curtidas">
+                  <img class="foto-perfil-usuario" src="img/" />
+                  <div class="informacoes-curtidas">
+                    Curtido por gabs_tiago e outras 1.011.690 pessoas
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-
-        <div class="sidebar"></div>
+        <div class="sidebar">
+          <div class="perfil-usuario">
+            <img class="sidebar-foto-perfil" src="img/gatinho-pokemon.png" />
+            <div class="sidebar-dados-perfil">
+              <h3>batata</h3>
+              <h4>batata</h4>
+            </div>
+          </div>
+          <div class="sugestoes">
+            <div class="sugestoes-topo">
+              <div class="sugestoes-para-voce">Sugestões para você</div>
+              <div class="ver-tudo">Ver tudo</div>
+            </div>
+            <div class="sugestoes-englobado-perfis">
+              <div class="sugestoes-perfil-usuario">
+                <div class="sugestoes-dados-perfil">
+                  <img src="img/beyonce.jpg" alt="" />
+                  <div class="sugestoes-nome-usuario">
+                    <div class="arroba-usuario"><h3>batata.yamete</h3></div>
+                    <div class="segue-voce">Segue você</div>
+                  </div>
+                </div>
+                <div class="seguir">Seguir</div>
+              </div>
+              <div class="sugestoes-perfil-usuario">
+                <div class="sugestoes-dados-perfil">
+                  <img src="img/beyonce.jpg" alt="" />
+                  <div class="sugestoes-nome-usuario">
+                    <div class="arroba-usuario"><h3>batata.yamete</h3></div>
+                    <div class="segue-voce">Segue você</div>
+                  </div>
+                </div>
+                <div class="seguir">Seguir</div>
+              </div>
+              <div class="sugestoes-perfil-usuario">
+                <div class="sugestoes-dados-perfil">
+                  <img src="img/beyonce.jpg" alt="" />
+                  <div class="sugestoes-nome-usuario">
+                    <div class="arroba-usuario"><h3>batata.yamete</h3></div>
+                    <div class="segue-voce">Segue você</div>
+                  </div>
+                </div>
+                <div class="seguir">Seguir</div>
+              </div>
+              <div class="sugestoes-perfil-usuario">
+                <div class="sugestoes-dados-perfil">
+                  <img src="img/beyonce.jpg" alt="" />
+                  <div class="sugestoes-nome-usuario">
+                    <div class="arroba-usuario"><h3>batata.yamete</h3></div>
+                    <div class="segue-voce">Segue você</div>
+                  </div>
+                </div>
+                <div class="seguir">Seguir</div>
+              </div>
+              <div class="sugestoes-perfil-usuario">
+                <div class="sugestoes-dados-perfil">
+                  <img src="img/beyonce.jpg" alt="" />
+                  <div class="sugestoes-nome-usuario">
+                    <div class="arroba-usuario"><h3>batata.yamete</h3></div>
+                    <div class="segue-voce">Segue você</div>
+                  </div>
+                </div>
+                <div class="seguir">Seguir</div>
+              </div>
+            </div>
+          </div>
+          <div class="sidebar-inferior">
+            <div class="dados">
+              <p>
+                Sobre • Ajuda • Imprensa • API • Carreiras • Privacidade •
+                Termos • Localizações • Contas mais relevantes • Hashtags •
+                Idioma
+              </p>
+            </div>
+            <div class="copy-rigths">© 2021 INSTAGRAM DO FACEBOOK</div>
+          </div>
+        </div>
       </div>
-    </div>
+    </main>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
   </body>
 </html>
