@@ -117,10 +117,12 @@ main {
   right: 5px;
   top: 43px;
   color: #ffffff;
+  filter: drop-shadow(3px 3px 4px rgba(157, 157, 157, 0.467));
 }
 .stories-perfil img {
-  width: 56px;
-  border-radius: 50%;
+  width: 58px;
+  height: 58px;
+  border-radius: 100%;
 }
 .stories-perfil {
   width: 66px;
@@ -128,9 +130,11 @@ main {
   background-image: url(img/stories_background.jpg);
   background-size: 66px;
   display: flex;
+
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  margin-bottom: 1px;
 }
 
 .stories {
@@ -176,6 +180,7 @@ main {
   font-size: 14px;
   font-weight: 500;
   line-height: 16.41px;
+  margin-left: 10px;
 }
 
 .foto-perfil {
